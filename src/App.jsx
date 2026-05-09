@@ -2,6 +2,7 @@ import { useState, useEffect, createContext, useContext } from "react";
 import { createClient } from "@supabase/supabase-js";
 import QuizModule from "./QuizModule.jsx";
 import HomeworkModule from "./HomeworkModule.jsx";
+import NotesModule from "./NotesModule";
 
 // ─── Supabase Client ───────────────────────────────────────────────────────────
 const supabase = createClient(
