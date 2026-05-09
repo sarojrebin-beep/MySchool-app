@@ -533,7 +533,7 @@ export default function HomeworkModule({ role, profile }) {
               [homework.filter(h=>h.status==="active").length,"Active"],
               [homework.filter(h=>h.status==="closed").length,"Closed"],
               [homework.length,"Total"],
-            ]).map(([n,l])=>(
+            ].map(([n,l])=>(
               <div key={l} style={{ background:"rgba(255,255,255,.15)",borderRadius:10,padding:"10px 6px",textAlign:"center" }}>
                 <div style={{ fontSize:"1.3rem",fontWeight:800 }}>{n}</div>
                 <div style={{ fontSize:".55rem",opacity:.8,textTransform:"uppercase",letterSpacing:.5 }}>{l}</div>
